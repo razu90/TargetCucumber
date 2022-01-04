@@ -1,0 +1,81 @@
+2022-01-03 23:50:25.280 [main][1068] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+2022-01-03 23:50:25.284 [main][1072] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2022-01-03 23:50:25.284 [main][1072] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2022-01-03 23:50:25.286 [main][1074] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@365553de
+2022-01-03 23:50:25.297 [main][1085] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2022-01-03 23:50:25.297 [main][1085] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+2022-01-03 23:50:25.298 [main][1086] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2022-01-03 23:50:25.298 [main][1086] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2022-01-03 23:50:25.298 [main][1086] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2022-01-03 23:50:25.298 [main][1086] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2022-01-03 23:50:25.299 [main][1087] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2022-01-03 23:50:25.299 [main][1087] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @45820e51
+2022-01-03 23:50:25.300 [main][1088] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2022-01-03 23:50:25.300 [main][1088] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2022-01-03 23:50:25.300 [main][1088] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 17133731840 bytes (maybe)
+2022-01-03 23:50:25.301 [main][1089] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\ahmed\AppData\Local\Temp (java.io.tmpdir)
+2022-01-03 23:50:25.301 [main][1089] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-03 23:50:25.301 [main][1089] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2022-01-03 23:50:25.301 [main][1089] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2022-01-03 23:50:25.301 [main][1089] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-03 23:50:25.302 [main][1090] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2022-01-03 23:50:25.302 [main][1090] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2022-01-03 23:50:25.306 [main][1094] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-03 23:50:25.316 [main][1104] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-03 23:50:25.316 [main][1104] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-03 23:50:25.329 [main][1117] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2022-01-03 23:50:25.329 [main][1117] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-03 23:50:25.344 [main][1132] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 40
+2022-01-03 23:50:25.348 [main][1136] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2022-01-03 23:50:25.349 [main][1137] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-03 23:50:25.376 [main][1164] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 40
+2022-01-03 23:50:25.376 [main][1164] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 40
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-03 23:50:25.377 [main][1165] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-03 23:50:25.383 [main][1171] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2022-01-03 23:50:25.383 [main][1171] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-03 23:50:25.383 [main][1171] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-03 23:50:26.032 [Forwarding newSession on session null to remote][1820] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 27028 (auto-detected)
+2022-01-03 23:50:26.033 [Forwarding newSession on session null to remote][1821] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2022-01-03 23:50:26.034 [Forwarding newSession on session null to remote][1822] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2022-01-03 23:50:26.169 [Forwarding newSession on session null to remote][1957] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-03 23:50:26.170 [Forwarding newSession on session null to remote][1958] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-03 23:50:26.315 [Forwarding newSession on session null to remote][2103] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f0:2f:74:ff:fe:d4:02:2a (auto-detected)
+2022-01-03 23:50:26.341 [AsyncHttpClient-1-2][2129] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2022-01-03 23:50:26.342 [AsyncHttpClient-1-2][2130] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2022-01-03 23:50:26.342 [AsyncHttpClient-1-2][2130] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7cae52f9
+2022-01-03 23:50:26.361 [AsyncHttpClient-1-2][2149] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-03 23:50:26.361 [AsyncHttpClient-1-2][2149] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-03 23:50:26.361 [AsyncHttpClient-1-2][2149] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2022-01-03 23:50:26.361 [AsyncHttpClient-1-2][2149] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2022-01-03 23:50:26.361 [AsyncHttpClient-1-2][2149] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-03 23:50:27.263 [AsyncHttpClient-1-2][3051] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-03 23:50:27.322 [main][3110] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x6ac457747c7b9e06
+2022-01-03 23:50:27.342 [main][3130] INFO  step_definitions.Hooks - Launch Browser
+2022-01-03 23:50:29.342 [main][5130] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-03 23:50:29.344 [main][5132] DEBUG page_objects.Categories - Click On Deals
+2022-01-03 23:50:30.415 [main][6203] DEBUG page_objects.Categories - Chose on going deals
+2022-01-03 23:50:32.284 [main][8072] INFO  step_definitions.Hooks - Close Browser
+2022-01-03 23:50:33.727 [main][9515] INFO  step_definitions.Hooks - Launch Browser
+2022-01-03 23:50:35.321 [main][11109] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-03 23:50:35.322 [main][11110] DEBUG page_objects.Categories - Click On Deals
+2022-01-03 23:50:36.388 [main][12176] DEBUG page_objects.Categories - Chose on going deals
+2022-01-03 23:50:38.046 [main][13834] INFO  step_definitions.Hooks - Close Browser
+2022-01-03 23:50:39.479 [main][15267] INFO  step_definitions.Hooks - Launch Browser
+2022-01-03 23:50:41.209 [main][16997] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-03 23:50:41.210 [main][16998] DEBUG page_objects.Categories - Click On Deals
+2022-01-03 23:50:42.353 [main][18141] DEBUG page_objects.Categories - Chose on going deals
+2022-01-03 23:50:44.715 [main][20503] INFO  step_definitions.Hooks - Close Browser
+2022-01-03 23:50:46.147 [main][21935] INFO  step_definitions.Hooks - Launch Browser
+2022-01-03 23:50:48.099 [main][23887] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-03 23:50:48.099 [main][23887] DEBUG page_objects.Categories - Click On Deals
+2022-01-03 23:50:49.164 [main][24952] DEBUG page_objects.Categories - Chose on going deals
+2022-01-03 23:50:51.030 [main][26818] INFO  step_definitions.Hooks - Close Browser
