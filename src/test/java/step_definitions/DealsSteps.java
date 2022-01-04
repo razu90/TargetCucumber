@@ -24,6 +24,8 @@ public class DealsSteps {
 
 
     @And("Page Url {string}")
-    public void pageUrl(String arg0) {
+    public void pageUrl(String url) throws Exception {
+        new Deals(driver)
+                .ValidationUrl(url);
     }
 }
