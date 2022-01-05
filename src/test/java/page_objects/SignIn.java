@@ -10,12 +10,12 @@ import step_definitions.SignInSteps;
 
 public class SignIn {
 
-    private static final By SignInButton = By.xpath("//*[@id=\"account\"]/span[2]");
-    private static final By SignInClick = By.xpath("//*[@id=\"accountNav-signIn\"]/a/div");
+    private static final By SignInButton = By.xpath("//*[@id='account']/span[2]");
+    private static final By SignInClick = By.xpath("//*[@id='accountNav-signIn']/a/div");
     private static final By UserName = By.id("username");
     private static final By Password = By.id("password");
-    private static final By LoginButton = By.xpath("//*[@id=\"login\"]/span");
-    private static final By ErrorMsg = By.xpath("//*[@id=\"__next\"]/div[2]/div/div[1]/div/div[2]/div/div");
+    private static final By LoginButton = By.xpath("//*[@id='login']/span");
+    private static final By ErrorMsg = By.xpath("//*[@id='__next']/div[2]/div/div[1]/div/div[2]/div/div");
 
     //-------------------------------Logger And WebDriver Start-------------------------------
     public WebDriver driver;

@@ -1,0 +1,204 @@
+2022-01-04 22:32:58.058 [main][1209] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+2022-01-04 22:32:58.062 [main][1213] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2022-01-04 22:32:58.062 [main][1213] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+2022-01-04 22:32:58.064 [main][1215] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@68ab0936
+2022-01-04 22:32:58.075 [main][1226] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+2022-01-04 22:32:58.075 [main][1226] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+2022-01-04 22:32:58.076 [main][1227] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2022-01-04 22:32:58.076 [main][1227] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2022-01-04 22:32:58.076 [main][1227] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2022-01-04 22:32:58.076 [main][1227] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2022-01-04 22:32:58.077 [main][1228] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+2022-01-04 22:32:58.077 [main][1228] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @37654521
+2022-01-04 22:32:58.078 [main][1229] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2022-01-04 22:32:58.078 [main][1229] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2022-01-04 22:32:58.078 [main][1229] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 17133731840 bytes (maybe)
+2022-01-04 22:32:58.078 [main][1229] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\ahmed\AppData\Local\Temp (java.io.tmpdir)
+2022-01-04 22:32:58.078 [main][1229] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-01-04 22:32:58.079 [main][1230] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+2022-01-04 22:32:58.079 [main][1230] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+2022-01-04 22:32:58.079 [main][1230] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-01-04 22:32:58.080 [main][1231] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+2022-01-04 22:32:58.080 [main][1231] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2022-01-04 22:32:58.084 [main][1235] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+2022-01-04 22:32:58.093 [main][1244] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-01-04 22:32:58.093 [main][1244] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-01-04 22:32:58.107 [main][1258] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2022-01-04 22:32:58.107 [main][1258] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-01-04 22:32:58.122 [main][1273] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 40
+2022-01-04 22:32:58.127 [main][1278] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2022-01-04 22:32:58.128 [main][1279] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-01-04 22:32:58.163 [main][1314] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 40
+2022-01-04 22:32:58.163 [main][1314] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 40
+2022-01-04 22:32:58.163 [main][1314] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2022-01-04 22:32:58.163 [main][1314] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2022-01-04 22:32:58.163 [main][1314] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+2022-01-04 22:32:58.164 [main][1315] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-01-04 22:32:58.171 [main][1322] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2022-01-04 22:32:58.171 [main][1322] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+2022-01-04 22:32:58.171 [main][1322] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-01-04 22:32:58.814 [Forwarding newSession on session null to remote][1965] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 52388 (auto-detected)
+2022-01-04 22:32:58.815 [Forwarding newSession on session null to remote][1966] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+2022-01-04 22:32:58.815 [Forwarding newSession on session null to remote][1966] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+2022-01-04 22:32:58.950 [Forwarding newSession on session null to remote][2101] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-01-04 22:32:58.951 [Forwarding newSession on session null to remote][2102] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-01-04 22:32:59.094 [Forwarding newSession on session null to remote][2245] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: f0:2f:74:ff:fe:d4:02:2a (auto-detected)
+2022-01-04 22:32:59.120 [AsyncHttpClient-1-2][2271] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+2022-01-04 22:32:59.120 [AsyncHttpClient-1-2][2271] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+2022-01-04 22:32:59.120 [AsyncHttpClient-1-2][2271] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@688cfe37
+2022-01-04 22:32:59.133 [AsyncHttpClient-1-2][2284] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-01-04 22:32:59.133 [AsyncHttpClient-1-2][2284] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-01-04 22:32:59.133 [AsyncHttpClient-1-2][2284] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2022-01-04 22:32:59.133 [AsyncHttpClient-1-2][2284] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+2022-01-04 22:32:59.133 [AsyncHttpClient-1-2][2284] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-01-04 22:32:59.678 [AsyncHttpClient-1-2][2829] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+2022-01-04 22:32:59.744 [main][2895] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xa0b290d70c356b54
+2022-01-04 22:32:59.766 [main][2917] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:33:01.398 [main][4549] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:33:01.400 [main][4551] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:02.475 [main][5626] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:03.783 [main][6934] DEBUG page_objects.Categories - Click On 2nd Category
+2022-01-04 22:33:05.082 [main][8233] DEBUG page_objects.Categories - Select a item
+2022-01-04 22:33:06.407 [main][9558] DEBUG page_objects.Categories - Title
+2022-01-04 22:33:08.014 [main][11165] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:33:09.100 [main][12251] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:33:10.860 [main][14011] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:33:10.861 [main][14012] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:11.931 [main][15082] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:13.238 [main][16389] DEBUG page_objects.Categories - Click On 2nd Category
+2022-01-04 22:33:14.517 [main][17668] DEBUG page_objects.Categories - Select a item
+2022-01-04 22:33:15.823 [main][18974] DEBUG page_objects.Categories - Title
+2022-01-04 22:33:17.397 [main][20548] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:33:18.526 [main][21677] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:33:19.798 [main][22949] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:33:19.799 [main][22950] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:21.241 [main][24392] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:23.030 [main][26181] DEBUG page_objects.Categories - Click On 2nd Category
+2022-01-04 22:33:24.832 [main][27983] DEBUG page_objects.Categories - Select a item
+2022-01-04 22:33:26.623 [main][29774] DEBUG page_objects.Categories - Title
+2022-01-04 22:33:28.192 [main][31343] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:33:29.322 [main][32473] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:33:32.090 [main][35241] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:33:32.091 [main][35242] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:33.168 [main][36319] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:34.484 [main][37635] DEBUG page_objects.Categories - Click On 2nd Category
+2022-01-04 22:33:35.766 [main][38917] DEBUG page_objects.Categories - Select a item
+2022-01-04 22:33:37.092 [main][40243] DEBUG page_objects.Categories - Title
+2022-01-04 22:33:38.667 [main][41818] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:33:39.795 [main][42946] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:33:41.478 [main][44629] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:33:41.479 [main][44630] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:42.552 [main][45703] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:43.860 [main][47011] DEBUG page_objects.Categories - Click On 2nd Category
+2022-01-04 22:33:45.149 [main][48300] DEBUG page_objects.Categories - Select a item
+2022-01-04 22:33:46.472 [main][49623] DEBUG page_objects.Categories - Title
+2022-01-04 22:33:48.040 [main][51191] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:33:49.118 [main][52269] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:33:50.791 [main][53942] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:33:50.791 [main][53942] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:51.872 [main][55023] DEBUG page_objects.Categories - Click On Categories
+2022-01-04 22:33:53.182 [main][56333] DEBUG page_objects.Categories - Click On 2nd Category
+2022-01-04 22:33:54.467 [main][57618] DEBUG page_objects.Categories - Select a item
+2022-01-04 22:33:55.777 [main][58928] DEBUG page_objects.Categories - Title
+2022-01-04 22:33:57.349 [main][60500] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:33:58.475 [main][61626] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:01.113 [main][64264] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:01.114 [main][64265] DEBUG page_objects.Categories - Click On Deals
+2022-01-04 22:34:02.180 [main][65331] DEBUG page_objects.Categories - Chose on going deals
+2022-01-04 22:34:03.491 [main][66642] DEBUG page_objects.Categories - Title
+2022-01-04 22:34:04.676 [main][67827] DEBUG page_objects.Categories - URL
+2022-01-04 22:34:06.271 [main][69422] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:07.346 [main][70497] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:10.143 [main][73294] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:10.143 [main][73294] DEBUG page_objects.Categories - Click On Deals
+2022-01-04 22:34:11.236 [main][74387] DEBUG page_objects.Categories - Chose on going deals
+2022-01-04 22:34:12.546 [main][75697] DEBUG page_objects.Categories - Title
+2022-01-04 22:34:13.553 [main][76704] DEBUG page_objects.Categories - URL
+2022-01-04 22:34:15.119 [main][78270] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:16.297 [main][79448] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:19.084 [main][82235] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:19.087 [main][82238] INFO  page_objects.HomePage - Home Page Title Is Target : Expect More. Pay Less.
+2022-01-04 22:34:19.087 [main][82238] INFO  page_objects.HomePage - User Saw The Title
+2022-01-04 22:34:19.641 [main][82792] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:20.819 [main][83970] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:23.616 [main][86767] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:23.617 [main][86768] DEBUG page_objects.Search - Clicked On Search Box
+2022-01-04 22:34:23.685 [main][86836] INFO  step_definitions.SignInSteps - User clicked on search button
+2022-01-04 22:34:23.686 [main][86837] DEBUG page_objects.Search - Typing Products
+2022-01-04 22:34:23.822 [main][86973] INFO  step_definitions.SignInSteps - User typingFace Mask
+2022-01-04 22:34:23.823 [main][86974] DEBUG page_objects.Search - Clicked On Search icon
+2022-01-04 22:34:24.974 [main][88125] INFO  step_definitions.SignInSteps - User Clicked On Search Icon
+2022-01-04 22:34:24.980 [main][88131] DEBUG page_objects.Search - Title isFace Mask : Target
+2022-01-04 22:34:24.981 [main][88132] INFO  step_definitions.SignInSteps - Title isFace Mask : Target
+2022-01-04 22:34:25.552 [main][88703] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:26.628 [main][89779] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:30.420 [main][93571] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:30.420 [main][93571] DEBUG page_objects.Search - Clicked On Search Box
+2022-01-04 22:34:30.494 [main][93645] INFO  step_definitions.SignInSteps - User clicked on search button
+2022-01-04 22:34:30.495 [main][93646] DEBUG page_objects.Search - Typing Products
+2022-01-04 22:34:30.634 [main][93785] INFO  step_definitions.SignInSteps - User typingHand sanitizer
+2022-01-04 22:34:30.634 [main][93785] DEBUG page_objects.Search - Clicked On Search icon
+2022-01-04 22:34:31.805 [main][94956] INFO  step_definitions.SignInSteps - User Clicked On Search Icon
+2022-01-04 22:34:31.826 [main][94977] DEBUG page_objects.Search - Title isHand Sanitizer : Target
+2022-01-04 22:34:31.826 [main][94977] INFO  step_definitions.SignInSteps - Title isHand Sanitizer : Target
+2022-01-04 22:34:32.388 [main][95539] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:33.463 [main][96614] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:35.117 [main][98268] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:35.117 [main][98268] DEBUG page_objects.Search - Clicked On Search Box
+2022-01-04 22:34:35.192 [main][98343] INFO  step_definitions.SignInSteps - User clicked on search button
+2022-01-04 22:34:35.192 [main][98343] DEBUG page_objects.Search - Typing Products
+2022-01-04 22:34:35.341 [main][98492] INFO  step_definitions.SignInSteps - User typingRubbing alcohol
+2022-01-04 22:34:35.342 [main][98493] DEBUG page_objects.Search - Clicked On Search icon
+2022-01-04 22:34:36.512 [main][99663] INFO  step_definitions.SignInSteps - User Clicked On Search Icon
+2022-01-04 22:34:36.517 [main][99668] DEBUG page_objects.Search - Title isRubbing Alcohol : Target
+2022-01-04 22:34:36.517 [main][99668] INFO  step_definitions.SignInSteps - Title isRubbing Alcohol : Target
+2022-01-04 22:34:37.076 [main][100227] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:38.150 [main][101301] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:39.822 [main][102973] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:39.822 [main][102973] DEBUG page_objects.Search - Clicked On Search Box
+2022-01-04 22:34:39.890 [main][103041] INFO  step_definitions.SignInSteps - User clicked on search button
+2022-01-04 22:34:39.891 [main][103042] DEBUG page_objects.Search - Typing Products
+2022-01-04 22:34:39.983 [main][103134] INFO  step_definitions.SignInSteps - User typingPs5
+2022-01-04 22:34:39.983 [main][103134] DEBUG page_objects.Search - Clicked On Search icon
+2022-01-04 22:34:41.113 [main][104264] INFO  step_definitions.SignInSteps - User Clicked On Search Icon
+2022-01-04 22:34:41.291 [main][104442] DEBUG page_objects.Search - Title isPlayStation 5 : Target
+2022-01-04 22:34:41.291 [main][104442] INFO  step_definitions.SignInSteps - Title isPlayStation 5 : Target
+2022-01-04 22:34:41.854 [main][105005] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:42.969 [main][106120] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:44.516 [main][107667] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:44.516 [main][107667] DEBUG page_objects.Search - Clicked On Search Box
+2022-01-04 22:34:44.586 [main][107737] INFO  step_definitions.SignInSteps - User clicked on search button
+2022-01-04 22:34:44.586 [main][107737] DEBUG page_objects.Search - Typing Products
+2022-01-04 22:34:44.727 [main][107878] INFO  step_definitions.SignInSteps - User typingcoffee maker
+2022-01-04 22:34:44.727 [main][107878] DEBUG page_objects.Search - Clicked On Search icon
+2022-01-04 22:34:45.892 [main][109043] INFO  step_definitions.SignInSteps - User Clicked On Search Icon
+2022-01-04 22:34:45.896 [main][109047] DEBUG page_objects.Search - Title isCoffee Maker : Target
+2022-01-04 22:34:45.896 [main][109047] INFO  step_definitions.SignInSteps - Title isCoffee Maker : Target
+2022-01-04 22:34:46.462 [main][109613] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:47.526 [main][110677] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:50.134 [main][113285] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:50.135 [main][113286] DEBUG page_objects.Categories - Click On Deals
+2022-01-04 22:34:51.191 [main][114342] DEBUG page_objects.Categories - Chose on going deals
+2022-01-04 22:34:51.492 [main][114643] DEBUG page_objects.Categories - User is in the category page
+2022-01-04 22:34:53.493 [main][116644] DEBUG page_objects.Categories - Page Title isNew Arrivals & 2022 Fashion Trends for Women : Target
+2022-01-04 22:34:54.058 [main][117209] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:34:55.174 [main][118325] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:34:56.777 [main][119928] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:34:56.778 [main][119929] DEBUG page_objects.Categories - Click On Deals
+2022-01-04 22:34:57.835 [main][120986] DEBUG page_objects.Categories - Chose on going deals
+2022-01-04 22:34:58.140 [main][121291] DEBUG page_objects.Categories - User is in the category page
+2022-01-04 22:35:00.140 [main][123291] DEBUG page_objects.Categories - Page Title isMen's New Arrivals : Target
+2022-01-04 22:35:00.715 [main][123866] INFO  step_definitions.Hooks - Close Browser
+2022-01-04 22:35:01.832 [main][124983] INFO  step_definitions.Hooks - Launch Browser
+2022-01-04 22:35:04.558 [main][127709] INFO  page_objects.HomePage - User Is In Home Page
+2022-01-04 22:35:04.558 [main][127709] DEBUG page_objects.Categories - Click On Deals
+2022-01-04 22:35:05.615 [main][128766] DEBUG page_objects.Categories - Chose on going deals
+2022-01-04 22:35:05.936 [main][129087] DEBUG page_objects.Categories - User is in the category page
+2022-01-04 22:35:07.936 [main][131087] DEBUG page_objects.Categories - Page Title isKids' New Arrivals : Target
+2022-01-04 22:35:08.510 [main][131661] INFO  step_definitions.Hooks - Close Browser

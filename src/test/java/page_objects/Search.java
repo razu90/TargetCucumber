@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Search {
     private  final By SearchBox = By.id("search");
-    private  final By SearchIcon = By.xpath("//*[@id=\"headerMain\"]/div/form/button[2]");
+    private  final By SearchIcon = By.xpath("//*[text()='go']");
 
     private static final Logger LOGGER = LogManager.getLogger(Search.class);
 

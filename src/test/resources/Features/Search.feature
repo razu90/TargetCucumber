@@ -11,6 +11,5 @@ Feature: Search Multiples Products
       | Face Mask         | Face Mask : Target         |
       | Hand sanitizer    | Hand Sanitizer : Target    |
       | Rubbing alcohol   | Rubbing Alcohol : Target   |
-      | Apple airpods pro | Apple Airpods Pro : Target |
       | Ps5               | PlayStation 5 : Target     |
       | coffee maker      | Coffee Maker : Target      |

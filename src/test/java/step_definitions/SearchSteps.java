@@ -33,11 +33,12 @@ public class SearchSteps {
         LOGGER.info("User Clicked On Search Icon");
     }
 
-    @When("^User click on search icon user will go to the product page and see page title \"(.+?)\"")
+    @When("^User click on search icon user will go to the product page and see page title \"(.+?)\"$")
     public void userClickOnSearchIconUserWillGoToTheProductPageAndSeePageTitle(String PageTitle) {
 
         new Search(driver)
                 .validatePageTitle(PageTitle);
         LOGGER.info("Title is" +PageTitle);
     }
+
 }
