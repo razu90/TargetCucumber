@@ -12,6 +12,8 @@ Feature: Check Shopping Cart Functionality With Multiple Products
     When User Successfully Add The Item To The Cart
     Examples:
       | Dmethod   | value   |
-      | 'E-MAIL'] | '$25']  |
-      | 'MOBILE'] | '$200'] |
+      | 'E-MAIL'] | '$50']  |
+      | 'MOBILE'] | '$100'] |
+      | 'E-MAIL'] | '$200'] |
+      | 'MOBILE'] | '$500'] |
 

@@ -6,13 +6,12 @@ Feature: Check Functionality For What's New Page
     Then Click on What's New
     And Chose  Some Categories "<category>"
     When User is in the category page
-#    Then validate the  Page Headline "<headline>"
     And Page Title "<title>"
     Examples:
-      | category             | headline           | title                                                 |
-      | Women's New Arrivals | New Arrivals       | New Arrivals & 2022 Fashion Trends for Women : Target |
-      | Men's New Arrivals   | Men's New Arrivals | Men's New Arrivals : Target                           |
-      | Kids' New Arrivals   | Kids' New Arrivals | Kids' New Arrivals : Target                           |
+      | category             | title                                                 |
+      | Women's New Arrivals | New Arrivals & 2022 Fashion Trends for Women : Target |
+      | Men's New Arrivals   | Men's New Arrivals : Target                           |
+      | Kids' New Arrivals   | Kids' New Arrivals : Target                           |
 
 
 

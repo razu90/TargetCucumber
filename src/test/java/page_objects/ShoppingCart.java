@@ -7,6 +7,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 
@@ -20,6 +22,7 @@ public class ShoppingCart {
 //            By.linkText("Add to cart");
     private final By HeadLineValidation = By.linkText("Cart: $200.00 (1 item)");
     private final By CheckOutButton = By.xpath("//*/button[text()='Check out']");
+    private final By TotalItem = By.xpath("//*[text()='1 item']");
 
 
 
@@ -43,33 +46,38 @@ public class ShoppingCart {
         CommandAction.element(driver,SelectGiftCard).click();
         CommandAction.wait(driver,SelectGiftCardDesign).waitForElementToBeVisible();
         CommandAction.element(driver,SelectGiftCardDesign).click();
+        LOGGER.debug("User Chose The Gift Card");
         return this;
     }
     public ShoppingCart selectDeliveryMethod (String  dMethod){
         CommandAction.wait(driver,By.xpath("//*[text()="+dMethod)).waitForElementToBeVisible();
         CommandAction.element(driver,By.xpath("//*[text()="+dMethod)).click();
+        LOGGER.debug("User Select The Delivery Method As "+dMethod);
         return this;
     }
     public ShoppingCart selectValue (String value) {
         CommandAction.element(driver,By.xpath("//*/button[text()="+value)).click();
+        LOGGER.debug("User Select Card Value For " + value);
         return this;
     }
     public ShoppingCart addToCart (){
         CommandAction.wait(driver,AddToCart).waitForElementToBeVisible();
         CommandAction.element(driver,AddToCart).click();
+        LOGGER.debug("User Add The Product To The Cart");
         return this;
     }
     public ShoppingCart checkOut (){
         CommandAction.wait(driver,By.xpath("//button[text()='View cart & checkout']")).waitForElementToBeVisible();
         CommandAction.element(driver,By.xpath("//button[text()='View cart & checkout']")).click();
+        LOGGER.debug("User Clicked For Checkout");
         return this;
     }
     public ShoppingCart cartValidation() {
-
-//        String formattedXpath = String.format("//*[text()='$%s']",expectedHeadLine);
-//        By actualHeadline = By.xpath(formattedXpath);
-        LOGGER.debug("User Is In The Cart");
-//        AssertThat.elementAssertions(driver,actualHeadline).elementIsDisplayed();
+        CommandAction.wait(driver,TotalItem).waitForElementToBeVisible();
+        String actualItem = CommandAction.element(driver,TotalItem).getTextValue();
+        String expectedItem = "1 item";
+        Assert.assertEquals(expectedItem,actualItem);
+        LOGGER.debug("User Is In The Cart With " +actualItem);
         return this;
 
     }
