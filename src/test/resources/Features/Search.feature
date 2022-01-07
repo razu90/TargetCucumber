@@ -1,5 +1,6 @@
 Feature: Check Search Functionality With Multiples Products Search
 
+  @SearchFunction
   Scenario Outline:User Will Search For Multiple Products
     Given User Is In Home Page
     Then User click on search button

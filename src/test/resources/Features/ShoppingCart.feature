@@ -1,6 +1,6 @@
 Feature: Check Shopping Cart Functionality With Multiple Products
 
-
+  @ShoppingCartFunction
   Scenario Outline: User Will Add A Gift Card To The Cart
     Given User Is In Home Page
     Then User Will Search For Gift card
@@ -13,6 +13,5 @@ Feature: Check Shopping Cart Functionality With Multiple Products
     Examples:
       | Dmethod   | value   |
       | 'E-MAIL'] | '$25']  |
-#      | 'MAIL']   | '$100'] |
       | 'MOBILE'] | '$200'] |
 
