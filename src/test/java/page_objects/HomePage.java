@@ -20,7 +20,9 @@ public class HomePage {
 
     public HomePage homePage(){
         CommandAction.browserActions(driver).openBrowser(ReadConfigFiles.getPropertyValues("MainUrl"));
+        LOGGER.debug("User Is In Home Page");
         return this;
+
     }
 
 
