@@ -1,4 +1,4 @@
-Feature: Here User Will Check Some On Going Deals
+Feature: Check Deals Functionality
 
   @CheckDealsFunction
   Scenario Outline: From The Home Page User Will Click Deals

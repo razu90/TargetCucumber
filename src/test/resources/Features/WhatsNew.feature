@@ -1,4 +1,4 @@
-Feature: Here User Will Check Some Latest Products
+Feature: Check Functionality For What's New Page
 
   @CheckDealsFunction
   Scenario Outline: From The Home Page User Will Click What's New

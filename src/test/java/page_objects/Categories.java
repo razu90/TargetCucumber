@@ -30,7 +30,9 @@ public class Categories {
 
     public Categories Select1stCategory(String category1) throws Exception {
         LOGGER.debug("Click On Categories");
+        CommandAction.wait(driver,By.linkText(category1)).waitForElementToBeVisible();
         driver.findElement(By.linkText(category1)).click();
+
         Thread.sleep(1000);
 
         return this;

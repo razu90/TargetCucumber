@@ -1,4 +1,4 @@
-Feature: Search Multiples Products
+Feature: Check Search Functionality With Multiples Products Search
 
   Scenario Outline:User Will Search For Multiple Products
     Given User Is In Home Page

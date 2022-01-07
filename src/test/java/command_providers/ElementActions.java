@@ -3,9 +3,9 @@ package command_providers;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -43,6 +43,15 @@ public class ElementActions {
     public ElementActions setValue(String value) {
         getElement().clear();
         getElement().sendKeys(value);
+        return this;
+    }
+    public ElementActions copyValue (String value) {
+        getElement().sendKeys(Keys.CONTROL,"c");
+        return this;
+    }
+
+    public ElementActions pasteValue (String value) {
+        getElement().sendKeys(Keys.CONTROL,"v");
         return this;
     }
     public ElementActions selectValue (String value) {

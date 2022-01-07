@@ -1,4 +1,4 @@
-Feature: Finish This Project To Get Your Dream Job
+Feature: Check Homepage Functionality
 
   @TargetHome
   Scenario: User Go To Home Page And See Featured categories
