@@ -1,15 +1,17 @@
 Feature: Check Shopping Cart Functionality With Multiple Products
 
+  Background:
+    Given the user is on Home Page
+    Then the user should see the title
+
   @ShoppingCartFunction
   Scenario Outline: User Will Add A Gift Card To The Cart
-    Given User Is In Home Page
-    Then User Will Search For Gift card
-    And Chose The Gift Card
-    Then From The Gift Card Page User Will Chose Delivery Method "<Dmethod>"
+    When User Search For Gift card
+    And Chose The Gift Card Design
+    And Chose Delivery Method "<Dmethod>"
     And Value "<value>"
-    Then User Will Add It To The Cart
-    And Go To The Cart For Checkout
-    When User Successfully Add The Item To The Cart
+    And Add It To The Cart
+    Then User will see the product successfully added to the cart
     Examples:
       | Dmethod   | value   |
       | 'E-MAIL'] | '$50']  |

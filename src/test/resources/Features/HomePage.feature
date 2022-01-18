@@ -1,6 +1,6 @@
 Feature: Check Homepage Functionality
 
-  @TargetHome
+  Background:
   Scenario: User Go To Home Page And See Featured categories
-    Given User Is In Home Page
-    When User Is In The Home Page, User Should See The Title
+    Given the user is on Home Page
+    Then the user should see the title

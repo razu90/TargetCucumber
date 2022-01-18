@@ -1,12 +1,13 @@
-Feature:Check Categories Functionality
+Feature: Check Categories Functionality
+
+  Background:
+    Given the user is on Home Page
+    Then the user should see the title
 
   @ChoseDifferentCategories
-  Scenario Outline: From The Home Page User Will Click Different Category
-    Given User Is In Home Page
-    Then Click on categories
-    And Chose  1st "<category1>"
-    Then Chose 2nd "<category2>"
-    And chose the item "<item>"
+  Scenario Outline: Validate page title with different categories and item
+    When the user clicks on categories
+    And Chose "<category1>" "<category2>" "<item>"
     Then validate the title contains "<title>"
     Examples:
       | category1   | category2       | item                | title                           |
@@ -15,5 +16,6 @@ Feature:Check Categories Functionality
       | Kids        | Girls' Clothing | Coats & Jackets     | Girls' Coats & Jackets : Target |
       | Home        | Smart Home      | Smart Lighting      | Smart Lighting : Target         |
       | Electronics | Cameras         | Digital SLR Cameras | DSLR Cameras : Target           |
-      | Grocery     | Beverages       | Juice & Cider       | Juice & Cider : Target          |
-
+      | Grocery     | Beverages       | Soda & Pop          | Soda & Pop : Target             |
+#    -----------------------------------------------------------------------------------------------------
+#    i tried to validate the page headline, but problem is it keep changing. that's why i validate the page title.

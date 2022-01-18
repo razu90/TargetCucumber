@@ -12,7 +12,7 @@ public class SearchSteps {
     private static final Logger LOGGER = LogManager.getLogger(SignInSteps.class);
     WebDriver driver = Hooks.driver;
 
-    @Then("^User click on search button$")
+    @When("^User click on search button$")
     public void user_click_on_search_button() {
        new Search(driver)
                .clickOnSearchBox();
@@ -33,7 +33,7 @@ public class SearchSteps {
         LOGGER.info("User Clicked On Search Icon");
     }
 
-    @When("^User click on search icon user will go to the product page and see page title \"(.+?)\"$")
+    @And("^User validate the title contains \"(.+?)\"$")
     public void userClickOnSearchIconUserWillGoToTheProductPageAndSeePageTitle(String PageTitle) {
 
         new Search(driver)

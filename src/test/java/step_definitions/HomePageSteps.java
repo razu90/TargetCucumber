@@ -1,34 +1,24 @@
 package step_definitions;
 
-import command_providers.CommandAction;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import page_objects.HomePage;
-import utilities.ReadConfigFiles;
 
 
 public class HomePageSteps {
-    private static final Logger LOGGER = LogManager.getLogger(HomePage.class);
     WebDriver driver = Hooks.driver;
 
 
-    @Given("User Is In Home Page")
-    public void userIsInHomePage() {
+    @Given("^the user is on Home Page$")
+    public void the_user_is_on_home_page() {
         new HomePage(driver)
                 .homePage();
-        LOGGER.info("User Is In Home Page");
     }
 
-
-    @When("User Is In The Home Page, User Should See The Title")
-    public void userIsInTheHomePageUserShouldSeeTheTitle() {
+    @Then("^the user should see the title$")
+    public void the_user_should_see_the_title() {
         new HomePage(driver)
-
                 .validateTitle();
-        LOGGER.info("User Saw The Title");
-
     }
 }

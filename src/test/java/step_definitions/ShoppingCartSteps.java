@@ -15,25 +15,28 @@ public class ShoppingCartSteps {
 
 
 
-    @Then("^User Will Search For Gift card$")
+    @When("^User Search For Gift card$")
     public void userWillSearchForGiftCard() {
         new ShoppingCart(driver)
                 .SearchForGiftCard();
+        LOGGER.info("User Searching For The Gift card");
 
 
     }
 
-    @And("^Chose The Gift Card$")
+    @And("^Chose The Gift Card Design$")
     public void choseTheGiftCard() {
         new ShoppingCart(driver)
                 .choseGiftCard();
+        LOGGER.info("User Chose The Gift card Design");
 
     }
 
-    @Then("^From The Gift Card Page User Will Chose Delivery Method \"(.+?)\"$")
+    @And("^Chose Delivery Method \"(.+?)\"$")
     public void fromTheGiftCardPageUserWillChoseDeliveryMethod(String deliveryOption) {
         new ShoppingCart(driver)
                 .selectDeliveryMethod(deliveryOption);
+        LOGGER.info("User SChose The Delivery Option");
 
     }
 
@@ -42,26 +45,26 @@ public class ShoppingCartSteps {
     public void value(String Value) {
         new ShoppingCart(driver)
                 .selectValue(Value);
+        LOGGER.info("User Select the value" +Value);
 
     }
 
-    @Then("User Will Add It To The Cart")
+    @And("^Add It To The Cart$")
     public void userWillAddItToTheCart() {
         new ShoppingCart(driver)
                 .addToCart();
+        LOGGER.info("User Add it to the cart");
 
     }
 
-    @And("Go To The Cart For Checkout")
+    @Then("^User will see the product successfully added to the cart$")
     public void goToTheCartForCheckout() {
         new ShoppingCart(driver)
-                .checkOut();
-
-    }
-
-    @When("User Successfully Add The Item To The Cart")
-    public void userSuccessfullyAddTheItemToTheCart() {
-        new ShoppingCart(driver)
+                .checkOut()
                 .cartValidation();
+        LOGGER.info("User Is in The Cart");
+
+
     }
+
 }

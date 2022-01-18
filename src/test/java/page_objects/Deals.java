@@ -44,4 +44,15 @@ public class Deals {
         Assert.assertEquals(url,actualUrl);
         return this;
     }
+
+    public Deals ValidatePageTitle(String title) throws Exception {
+        String actualTitle = driver.getTitle();
+        Thread.sleep(1000);
+        Assert.assertEquals(title,actualTitle);
+        LOGGER.debug("TITLE");
+        return this;
+    }
+
+
+
 }

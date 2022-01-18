@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 
 public class WhatsNew {
     private final By clickWhatNew = By.id("trending");
+    private final By PageHeadLine = By.xpath("//*/h1[text()='New Arrivals']");
 
 
     private static final Logger LOGGER = LogManager.getLogger(Categories.class);
@@ -20,7 +21,7 @@ public class WhatsNew {
     }
 
     public WhatsNew ClickOnWhatsNew() throws Exception {
-        LOGGER.debug("Click On Deals");
+        LOGGER.debug("Click On What's New");
         CommandAction.element(driver,clickWhatNew ).click();
         Thread.sleep(1000);
         return this;
@@ -28,14 +29,14 @@ public class WhatsNew {
 
 
     public WhatsNew selectCategory(String newCategory) {
-        LOGGER.debug("Chose on going deals");
+        LOGGER.debug("Chose Women's New Arrivals");
         driver.findElement(By.linkText(newCategory)).click();
 
         return this;
     }
 
     public WhatsNew WaitForPageToLoad() throws Exception {
-        LOGGER.debug("User is in the category page");
+        LOGGER.debug("User is in the New Arrivals page");
         Thread.sleep(2000);
         return this;
     }
@@ -43,17 +44,11 @@ public class WhatsNew {
 
 
     public WhatsNew ValidatePageHeadline(String headLine) {
-        LOGGER.debug("Page Title is" + headLine);
-        String actualHeadline = driver.findElement(By.className("Heading__StyledHeading-sc-1mp23s9-0 dUBjVM h-margin-b-none")).getText();
-        Assert.assertEquals(headLine, actualHeadline);
+        LOGGER.debug("Page Head Line is " + headLine);
+        String actualHeadline = driver.findElement(PageHeadLine).getText();
+        String expectedHeadLine = headLine;
+        Assert.assertEquals(expectedHeadLine, actualHeadline);
         return this;
     }
 
-    public WhatsNew ValidatePageTitle(String title) {
-        LOGGER.debug("Page Title is" + title);
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(title,actualTitle);
-
-        return this;
-    }
 }

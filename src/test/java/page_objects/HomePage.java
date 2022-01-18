@@ -4,12 +4,11 @@ import command_providers.CommandAction;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import utilities.ReadConfigFiles;
 
 public class HomePage {
-    private final By HomePageTitle = By.linkText("Target : Expect More. Pay Less.");
+
     private static final Logger LOGGER = LogManager.getLogger(HomePage.class);
 
     public WebDriver driver;
