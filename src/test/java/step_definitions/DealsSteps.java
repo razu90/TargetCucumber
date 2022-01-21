@@ -10,13 +10,13 @@ public class DealsSteps {
     WebDriver driver = Hooks.driver;
 
     @When("^the user clicks on Deals$")
-    public void the_user_clicks_on_deals() throws Exception {
+    public void the_user_clicks_on_deals(){
         new Deals(driver)
                 .ClickOnDeals();
     }
 
     @And("^Chose on going Deals \"(.+?)\"$")
-    public void chose_on_going_deals(String deals) throws Exception {
+    public void chose_on_going_deals(String deals){
         new Deals(driver)
                 .selectCurrentDeals(deals);
 
@@ -24,7 +24,7 @@ public class DealsSteps {
     }
 
     @Then("^validate the title And Url contains \"(.+?)\"  \"(.+?)\"$")
-    public void validateTheTitleAndUrlContains(String Title, String Url) throws Exception {
+    public void validateTheTitleAndUrlContains(String Title, String Url){
         new Deals(driver)
                 .ValidatePageTitle(Title)
                 .ValidationUrl(Url);
