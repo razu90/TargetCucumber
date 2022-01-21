@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class Deals {
 
     private final By Deals = By.linkText("Deals");
@@ -20,34 +21,32 @@ public class Deals {
         this.driver = driver;
     }
 
-    public Deals ClickOnDeals() throws Exception {
+    public Deals ClickOnDeals(){
         LOGGER.debug("Click On Deals");
         CommandAction.element(driver, Deals).click();
-        Thread.sleep(1000);
         return this;
     }
 
 
     public Deals selectCurrentDeals(String currentDeals) throws Exception {
         LOGGER.debug("Chose on going deals");
-        driver.findElement(By.linkText(currentDeals)).click();
+        CommandAction.wait(driver,By.linkText(currentDeals)).waitForElementToBeVisible();
+        CommandAction.element(driver,By.linkText(currentDeals)).click();
         Thread.sleep(1000);
         return this;
     }
 
 
 
-    public Deals ValidationUrl(String url) throws Exception {
+    public Deals ValidationUrl(String url){
         LOGGER.debug("URL");
         String actualUrl = driver.getCurrentUrl();
-        Thread.sleep(1000);
         Assert.assertEquals(url,actualUrl);
         return this;
     }
 
-    public Deals ValidatePageTitle(String title) throws Exception {
+    public Deals ValidatePageTitle(String title){
         String actualTitle = driver.getTitle();
-        Thread.sleep(1000);
         Assert.assertEquals(title,actualTitle);
         LOGGER.debug("TITLE");
         return this;

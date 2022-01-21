@@ -23,39 +23,33 @@ public class Categories {
     public Categories ClickOnCategories() throws Exception {
         LOGGER.debug("Click On Categories");
         CommandAction.element(driver, Categories).click();
-        Thread.sleep(1000);
         return this;
     }
 
 
-    public Categories Select1stCategory(String category1) throws Exception {
+    public Categories Select1stCategory(String category1){
         LOGGER.debug("Click On Categories");
         CommandAction.wait(driver,By.linkText(category1)).waitForElementToBeVisible();
-        driver.findElement(By.linkText(category1)).click();
-
-        Thread.sleep(1000);
-
+        CommandAction.element(driver,By.linkText(category1)).click();
         return this;
     }
 
-    public Categories Select2ndCategory(String category2) throws Exception {
+    public Categories Select2ndCategory(String category2){
         LOGGER.debug("Click On 2nd Category");
-        driver.findElement(By.linkText(category2)).click();
-        Thread.sleep(1000);
+        CommandAction.element(driver,By.linkText(category2)).click();
         return this;
     }
 
     public Categories SelectItem(String item) throws Exception {
         LOGGER.debug("Select a item");
-        driver.findElement(By.linkText(item)).click();
+        CommandAction.element(driver,By.linkText(item)).click();
         Thread.sleep(1000);
         return this;
     }
 
-    public Categories titleValidation(String title) throws Exception {
+    public Categories titleValidation(String title) {
         LOGGER.debug("Title");
         String actualTitle = driver.getTitle();
-        Thread.sleep(1000);
         Assert.assertEquals(title, actualTitle);
         return this;
     }

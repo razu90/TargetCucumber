@@ -20,24 +20,23 @@ public class WhatsNew {
         this.driver = driver;
     }
 
-    public WhatsNew ClickOnWhatsNew() throws Exception {
+    public WhatsNew ClickOnWhatsNew(){
         LOGGER.debug("Click On What's New");
         CommandAction.element(driver,clickWhatNew ).click();
-        Thread.sleep(1000);
         return this;
     }
 
 
     public WhatsNew selectCategory(String newCategory) {
         LOGGER.debug("Chose Women's New Arrivals");
-        driver.findElement(By.linkText(newCategory)).click();
-
+        CommandAction.wait(driver,By.linkText(newCategory)).waitForElementToBeVisible();
+        CommandAction.element(driver,By.linkText(newCategory)).click();
         return this;
     }
 
     public WhatsNew WaitForPageToLoad() throws Exception {
         LOGGER.debug("User is in the New Arrivals page");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         return this;
     }
 
