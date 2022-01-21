@@ -28,11 +28,11 @@ public class Deals {
     }
 
 
-    public Deals selectCurrentDeals(String currentDeals) throws Exception {
+    public Deals selectCurrentDeals(String currentDeals){
         LOGGER.debug("Chose on going deals");
         CommandAction.wait(driver,By.linkText(currentDeals)).waitForElementToBeVisible();
         CommandAction.element(driver,By.linkText(currentDeals)).click();
-        Thread.sleep(1000);
+        CommandAction.wait(driver,By.linkText(currentDeals)).fixWait(1000);
         return this;
     }
 

@@ -20,32 +20,23 @@ public class Categories {
         this.driver = driver;
     }
 
-    public Categories ClickOnCategories() throws Exception {
+    public Categories ClickOnCategories(){
         LOGGER.debug("Click On Categories");
         CommandAction.element(driver, Categories).click();
         return this;
     }
 
 
-    public Categories Select1stCategory(String category1){
+    public Categories SelectCategory(String category1, String category2, String item){
         LOGGER.debug("Click On Categories");
         CommandAction.wait(driver,By.linkText(category1)).waitForElementToBeVisible();
         CommandAction.element(driver,By.linkText(category1)).click();
-        return this;
-    }
-
-    public Categories Select2ndCategory(String category2){
-        LOGGER.debug("Click On 2nd Category");
         CommandAction.element(driver,By.linkText(category2)).click();
+        CommandAction.element(driver,By.linkText(item)).click();
+        CommandAction.wait(driver,By.linkText(item)).fixWait(1000);
         return this;
     }
 
-    public Categories SelectItem(String item) throws Exception {
-        LOGGER.debug("Select a item");
-        CommandAction.element(driver,By.linkText(item)).click();
-        Thread.sleep(1000);
-        return this;
-    }
 
     public Categories titleValidation(String title) {
         LOGGER.debug("Title");

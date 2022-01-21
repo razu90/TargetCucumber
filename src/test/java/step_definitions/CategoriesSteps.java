@@ -20,9 +20,7 @@ public class CategoriesSteps {
     @And("^Chose \"(.+?)\" \"(.+?)\" \"(.+?)\"$")
     public void chose(String category1, String category2, String item) throws Exception {
         new Categories(driver)
-                .Select1stCategory(category1)
-                .Select2ndCategory(category2)
-                .SelectItem(item);
+                .SelectCategory(category1,category2,item);
     }
 
     @Then("^validate the title contains \"(.+?)\"$")
