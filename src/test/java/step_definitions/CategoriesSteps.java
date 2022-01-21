@@ -10,7 +10,7 @@ import page_objects.Categories;
 public class CategoriesSteps {
     WebDriver driver = Hooks.driver;
 
-    @When("^the user clicks on categories$")
+    @When("^user clicks on categories$")
     public void the_user_clicks_on_categories() {
         new Categories(driver)
                 .ClickOnCategories();

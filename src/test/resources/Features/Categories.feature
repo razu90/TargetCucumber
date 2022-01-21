@@ -6,7 +6,7 @@ Feature: Check Categories Functionality
 
   @ChoseDifferentCategories
   Scenario Outline: Validate page title with different categories and item
-    When the user clicks on categories
+    When user clicks on categories
     And Chose "<category1>" "<category2>" "<item>"
     Then validate the title contains "<title>"
     Examples:
