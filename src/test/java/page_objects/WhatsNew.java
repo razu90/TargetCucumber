@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class WhatsNew {
-    private final By clickWhatNew = By.cssSelector("#trending");
+
     private final By PageHeadLine = By.xpath("//*/h1[text()='New Arrivals']");
     private final By WaitForSignUpToVisible = By.xpath("//*/div[text()='Sign up']");
 
@@ -19,12 +19,6 @@ public class WhatsNew {
 
     public WhatsNew(WebDriver driver) {
         this.driver = driver;
-    }
-
-    public WhatsNew ClickOnWhatsNew(){
-        LOGGER.debug("Click On What's New");
-        CommandAction.element(driver,clickWhatNew ).click();
-        return this;
     }
 
 

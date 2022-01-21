@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 
 public class Deals {
 
-    private final By Deals = By.linkText("Deals");
     private final By WaitForSignUpToVisible = By.xpath("//*/div[text()='Sign up']");
 
 
@@ -22,11 +21,6 @@ public class Deals {
         this.driver = driver;
     }
 
-    public Deals ClickOnDeals() {
-        LOGGER.debug("Click On Deals");
-        CommandAction.element(driver, Deals).click();
-        return this;
-    }
 
 
     public Deals selectCurrentDeals(String currentDeals) {

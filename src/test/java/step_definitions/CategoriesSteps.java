@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import page_objects.Categories;
+import page_objects.NavigationBar;
 
 
 public class CategoriesSteps {
@@ -12,8 +13,8 @@ public class CategoriesSteps {
 
     @When("^user clicks on categories$")
     public void the_user_clicks_on_categories() {
-        new Categories(driver)
-                .ClickOnCategories();
+        new NavigationBar(driver)
+                .clickOnCategories();
 
     }
 

@@ -10,8 +10,6 @@ import org.openqa.selenium.WebDriver;
 
 public class ShoppingCart {
 
-    private final By SearchBox = By.id("search");
-    private final By SearchIcon = By.xpath("//*[text()='go']");
     private final By SelectGiftCard = By.linkText("Thank You");
     private final By SelectGiftCardDesign = By.linkText("Balloon Thanks Target GiftCard");
     private final By AddToCart = By.xpath("//*[text()='Add to cart']");
@@ -26,14 +24,6 @@ public class ShoppingCart {
         this.driver = driver;
     }
 
-    public ShoppingCart SearchForGiftCard() {
-        CommandAction.wait(driver, By.id("search")).waitForElementToBeVisible();
-        CommandAction.element(driver, SearchBox).setValue("Target Gift Card");
-        CommandAction.wait(driver, SearchIcon).waitForElementToBeVisible();
-        CommandAction.element(driver, SearchIcon).click();
-        LOGGER.debug("User Search The Gift Card");
-        return this;
-    }
 
     public ShoppingCart choseGiftCard() {
         CommandAction.wait(driver, SelectGiftCard).waitForElementToBeVisible();
