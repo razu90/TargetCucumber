@@ -8,8 +8,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class WhatsNew {
-    private final By clickWhatNew = By.id("trending");
+    private final By clickWhatNew = By.cssSelector("#trending");
     private final By PageHeadLine = By.xpath("//*/h1[text()='New Arrivals']");
+    private final By WaitForSignUpToVisible = By.xpath("//*/div[text()='Sign up']");
 
 
     private static final Logger LOGGER = LogManager.getLogger(Categories.class);
@@ -34,9 +35,9 @@ public class WhatsNew {
         return this;
     }
 
-    public WhatsNew WaitForPageToLoad() throws Exception {
+    public WhatsNew WaitForPageToLoad() {
         LOGGER.debug("User is in the New Arrivals page");
-        Thread.sleep(1000);
+        CommandAction.wait(driver, WaitForSignUpToVisible).waitForElementToBeVisible();
         return this;
     }
 

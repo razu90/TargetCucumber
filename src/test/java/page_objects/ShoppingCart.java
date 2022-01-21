@@ -15,6 +15,7 @@ public class ShoppingCart {
     private final By SelectGiftCard = By.linkText("Thank You");
     private final By SelectGiftCardDesign = By.linkText("Balloon Thanks Target GiftCard");
     private final By AddToCart = By.xpath("//*[text()='Add to cart']");
+    private final By CheckOut = By.xpath("//button[text()='View cart & checkout']");
     private final By TotalItem = By.xpath("//*[text()='1 item']");
 
 
@@ -64,8 +65,8 @@ public class ShoppingCart {
     }
 
     public ShoppingCart checkOut() {
-        CommandAction.wait(driver, By.xpath("//button[text()='View cart & checkout']")).waitForElementToBeVisible();
-        CommandAction.element(driver, By.xpath("//button[text()='View cart & checkout']")).click();
+        CommandAction.wait(driver, CheckOut).waitForElementToBeVisible();
+        CommandAction.element(driver, CheckOut).click();
         LOGGER.debug("User Clicked For Checkout");
         return this;
     }

@@ -18,13 +18,13 @@ public class CategoriesSteps {
     }
 
     @And("^Chose \"(.+?)\" \"(.+?)\" \"(.+?)\"$")
-    public void chose(String category1, String category2, String item){
+    public void chose(String category1, String category2, String item) {
         new Categories(driver)
-                .SelectCategory(category1,category2,item);
+                .SelectCategory(category1, category2, item);
     }
 
     @Then("^validate the title contains \"(.+?)\"$")
-    public void validate_the_title_contains(String title){
+    public void validate_the_title_contains(String title) {
         new Categories(driver)
                 .titleValidation(title);
     }

@@ -11,7 +11,7 @@ public class WhatsNewSteps {
 
 
     @When("^User Clicked on What's New$")
-    public void clickOnWhatsNew() throws Exception {
+    public void clickOnWhatsNew(){
         new WhatsNew(driver)
                 .ClickOnWhatsNew();
     }

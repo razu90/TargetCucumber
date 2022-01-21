@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 public class Deals {
 
     private final By Deals = By.linkText("Deals");
+    private final By WaitForSignUpToVisible = By.xpath("//*/div[text()='Sign up']");
 
 
     private static final Logger LOGGER = LogManager.getLogger(Categories.class);
@@ -21,37 +22,35 @@ public class Deals {
         this.driver = driver;
     }
 
-    public Deals ClickOnDeals(){
+    public Deals ClickOnDeals() {
         LOGGER.debug("Click On Deals");
         CommandAction.element(driver, Deals).click();
         return this;
     }
 
 
-    public Deals selectCurrentDeals(String currentDeals){
+    public Deals selectCurrentDeals(String currentDeals) {
         LOGGER.debug("Chose on going deals");
-        CommandAction.wait(driver,By.linkText(currentDeals)).waitForElementToBeVisible();
-        CommandAction.element(driver,By.linkText(currentDeals)).click();
-        CommandAction.wait(driver,By.linkText(currentDeals)).fixWait(1000);
+        CommandAction.wait(driver, By.linkText(currentDeals)).waitForElementToBeVisible();
+        CommandAction.element(driver, By.linkText(currentDeals)).click();
+        CommandAction.wait(driver, WaitForSignUpToVisible).waitForElementToBeVisible();
         return this;
     }
 
 
-
-    public Deals ValidationUrl(String url){
+    public Deals ValidationUrl(String url) {
         LOGGER.debug("URL");
         String actualUrl = driver.getCurrentUrl();
-        Assert.assertEquals(url,actualUrl);
+        Assert.assertEquals(url, actualUrl);
         return this;
     }
 
-    public Deals ValidatePageTitle(String title){
+    public Deals ValidatePageTitle(String title) {
         String actualTitle = driver.getTitle();
-        Assert.assertEquals(title,actualTitle);
+        Assert.assertEquals(title, actualTitle);
         LOGGER.debug("TITLE");
         return this;
     }
-
 
 
 }

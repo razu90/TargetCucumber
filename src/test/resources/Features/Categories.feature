@@ -16,6 +16,5 @@ Feature: Check Categories Functionality
       | Kids        | Girls' Clothing | Coats & Jackets     | Girls' Coats & Jackets : Target |
       | Home        | Smart Home      | Smart Lighting      | Smart Lighting : Target         |
       | Electronics | Cameras         | Digital SLR Cameras | DSLR Cameras : Target           |
-      | Grocery     | Beverages       | Soda & Pop          | Soda & Pop : Target             |
 #    -----------------------------------------------------------------------------------------------------
 #    i tried to validate the page headline, but problem is it keep changing. that's why i validate the page title.
