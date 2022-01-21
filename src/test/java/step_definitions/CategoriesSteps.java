@@ -11,20 +11,20 @@ public class CategoriesSteps {
     WebDriver driver = Hooks.driver;
 
     @When("^the user clicks on categories$")
-    public void the_user_clicks_on_categories() throws Exception {
+    public void the_user_clicks_on_categories() {
         new Categories(driver)
                 .ClickOnCategories();
 
     }
 
     @And("^Chose \"(.+?)\" \"(.+?)\" \"(.+?)\"$")
-    public void chose(String category1, String category2, String item) throws Exception {
+    public void chose(String category1, String category2, String item){
         new Categories(driver)
                 .SelectCategory(category1,category2,item);
     }
 
     @Then("^validate the title contains \"(.+?)\"$")
-    public void validate_the_title_contains(String title) throws Exception {
+    public void validate_the_title_contains(String title){
         new Categories(driver)
                 .titleValidation(title);
     }
