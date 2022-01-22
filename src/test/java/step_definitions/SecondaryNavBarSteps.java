@@ -14,7 +14,6 @@ public class SecondaryNavBarSteps {
         new SecondaryNavBar(driver)
                 .clickOnMyStore();
     }
-
     @Then("^User Validate The Manu Bar Functionality$")
     public void UserValidateTheManuBarFunctionality() {
         new SecondaryNavBar(driver)
@@ -26,7 +25,6 @@ public class SecondaryNavBarSteps {
         new SecondaryNavBar(driver)
                 .selectMultipleTab(Tab);
     }
-
     @Then("^User Validate The Xpath \"(.+?)\"$")
     public void userValidateTheXpath(String Xpath) {
         new SecondaryNavBar(driver)
@@ -38,13 +36,11 @@ public class SecondaryNavBarSteps {
         new SecondaryNavBar(driver)
                 .selectMore();
     }
-
     @And("^Select Navigation List \"(.+?)\"$")
     public void selectNavigationList(String navList) {
         new SecondaryNavBar(driver)
                 .selectNavList(navList);
     }
-
     @Then("^Validate The Page Headline \"(.+?)\"$")
     public void validateThePageHeadline(String modifiedHeadline) {
         new SecondaryNavBar(driver)
