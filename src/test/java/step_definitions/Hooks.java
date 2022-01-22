@@ -17,9 +17,9 @@ public class Hooks {
         LOGGER.info("Launch Browser");
     }
 
-    @After
-        public void closeBrowser () {
-            DriverFactory.getInstance().removeDriver();
-            LOGGER.info("Close Browser");
-        }
+//    @After
+//        public void closeBrowser () {
+//            DriverFactory.getInstance().removeDriver();
+//            LOGGER.info("Close Browser");
+//        }
     }
