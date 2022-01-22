@@ -38,33 +38,35 @@ public class SecondaryNavBar {
         return this;
     }
     public SecondaryNavBar validateMyStore(){
-        LOGGER.debug("User See The Zip Code Input Option");
         CommandAction.wait(driver,By.id("zipOrCityState")).waitForElementToBeVisible();
         AssertThat.elementAssertions(driver, By.id("zipOrCityState")).elementIsDisplayed();
+        LOGGER.debug("User See The Zip Code Input Option");
         return this;
     }
 
     public SecondaryNavBar selectMultipleTab(String tab){
-        LOGGER.debug("User Select " +tab);
 //        CommandAction.wait(driver,By.xpath("//*/li/a[text()=" + tab)).waitForElementToBeVisible();
 //        CommandAction.element(driver,By.xpath("//*/li/a[text()=" + tab)).click();
         CommandAction.wait(driver,By.linkText(tab)).waitForElementToBeVisible();
         CommandAction.element(driver,By.linkText(tab)).click();
+        LOGGER.debug("User Select " +tab);
         return this;
     }
     public SecondaryNavBar validateMultipleXpath(String xPath){
-        LOGGER.debug("User see " +xPath);
         CommandAction.wait(driver,By.xpath(xPath)).waitForElementToBeVisible();
         AssertThat.elementAssertions(driver,By.xpath(xPath)).elementIsDisplayed();
+        LOGGER.debug("Xpath Is " +xPath);
         return this;
     }
 
     public SecondaryNavBar selectMore(){
         CommandAction.wait(driver,More).waitForElementToBeVisible();
         CommandAction.element(driver,More).click();
+        LOGGER.debug("User Clicked On More");
         return this;
     }
     public SecondaryNavBar selectNavList (String NavList){
+        LOGGER.debug("User Clicked " +NavList);
         CommandAction.wait(driver,By.linkText(NavList)).waitForElementToBeVisible();
         CommandAction.element(driver,By.linkText(NavList)).click();
         return this;
@@ -72,6 +74,7 @@ public class SecondaryNavBar {
     public SecondaryNavBar validatePageHeadline (String headLine){
         CommandAction.wait(driver,By.xpath("//h1[text()=" + headLine)).waitForElementToBeVisible();
         AssertThat.elementAssertions(driver,By.xpath("//h1[text()=" +headLine)).elementIsDisplayed();
+        LOGGER.debug("Page HeadLine Is  " +headLine);
         return this;
     }
 
