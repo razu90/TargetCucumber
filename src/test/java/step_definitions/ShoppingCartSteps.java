@@ -3,15 +3,11 @@ package step_definitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.messages.types.DataTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import page_objects.NavigationBar;
 import page_objects.ShoppingCart;
-
-import java.util.List;
-import java.util.Map;
 
 public class ShoppingCartSteps {
     private static final Logger LOGGER = LogManager.getLogger(ShoppingCartSteps.class);

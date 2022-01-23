@@ -24,8 +24,8 @@ public class WhatsNew {
 
     public WhatsNew selectCategory(String newCategory) {
         LOGGER.debug("Chose Women's New Arrivals");
-        CommandAction.wait(driver,By.linkText(newCategory)).waitForElementToBeVisible();
-        CommandAction.element(driver,By.linkText(newCategory)).click();
+        CommandAction.wait(driver, By.linkText(newCategory)).waitForElementToBeVisible();
+        CommandAction.element(driver, By.linkText(newCategory)).click();
         return this;
     }
 
@@ -34,7 +34,6 @@ public class WhatsNew {
         CommandAction.wait(driver, WaitForSignUpToVisible).waitForElementToBeVisible();
         return this;
     }
-
 
 
     public WhatsNew ValidatePageHeadline(String headLine) {

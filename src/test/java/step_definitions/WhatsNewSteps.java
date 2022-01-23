@@ -12,7 +12,7 @@ public class WhatsNewSteps {
 
 
     @When("^User Clicked on What's New$")
-    public void clickOnWhatsNew(){
+    public void clickOnWhatsNew() {
         new NavigationBar(driver)
                 .clickOnWhatsNew();
     }
