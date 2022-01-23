@@ -14,7 +14,12 @@ public class ShoppingCart {
     private final By SelectGiftCardDesign = By.linkText("Balloon Thanks Target GiftCard");
     private final By AddToCart = By.xpath("//*[text()='Add to cart']");
     private final By CheckOut = By.xpath("//button[text()='View cart & checkout']");
-    private final By TotalItem = By.xpath("//*[text()='1 item']");
+    private final By ContinueShopping = By.xpath("//button[text()='Continue shopping']");
+    private final By Total1Item = By.xpath("//*[text()='1 item']");
+    private final By $50GiftCard = By.xpath("//*/button[text()='$50']");
+    private final By $100GiftCard = By.xpath("//*/button[text()='$100']");
+    private final By $200GiftCard = By.xpath("//*/button[text()='$200']");
+    private final By EmailDelivery = By.xpath("//*[text()='E-MAIL']");
 
 
     private static final Logger LOGGER = LogManager.getLogger(ShoppingCart.class);
@@ -31,6 +36,34 @@ public class ShoppingCart {
         CommandAction.wait(driver, SelectGiftCardDesign).waitForElementToBeVisible();
         CommandAction.element(driver, SelectGiftCardDesign).click();
         LOGGER.debug("User Chose The Gift Card");
+        return this;
+    }
+
+    public ShoppingCart select$50GiftCard() {
+        CommandAction.wait(driver, $50GiftCard).waitForElementToBeVisible();
+        CommandAction.element(driver, $50GiftCard).click();
+        LOGGER.debug("User Select $50 Gift Card");
+        return this;
+    }
+
+    public ShoppingCart select$100GiftCard() {
+        CommandAction.wait(driver, $100GiftCard).waitForElementToBeVisible();
+        CommandAction.element(driver, $100GiftCard).click();
+        LOGGER.debug("User Select $100 Gift Card");
+        return this;
+    }
+
+    public ShoppingCart select$200GiftCard() {
+        CommandAction.wait(driver, $200GiftCard).waitForElementToBeVisible();
+        CommandAction.element(driver, $200GiftCard).click();
+        LOGGER.debug("User Select $200 Gift Card");
+        return this;
+    }
+
+    public ShoppingCart selectEmailDelivery() {
+        CommandAction.wait(driver, EmailDelivery).waitForElementToBeVisible();
+        CommandAction.element(driver, EmailDelivery).click();
+        LOGGER.debug("User Chose Email Delivery");
         return this;
     }
 
@@ -61,9 +94,16 @@ public class ShoppingCart {
         return this;
     }
 
+    public ShoppingCart continueShopping() {
+        CommandAction.wait(driver, ContinueShopping).waitForElementToBeVisible();
+        CommandAction.element(driver, ContinueShopping).click();
+        LOGGER.debug("User Clicked For Checkout");
+        return this;
+    }
+
     public ShoppingCart cartValidation() {
-        CommandAction.wait(driver, TotalItem).waitForElementToBeVisible();
-        String actualItem = CommandAction.element(driver, TotalItem).getTextValue();
+        CommandAction.wait(driver, Total1Item).waitForElementToBeVisible();
+        String actualItem = CommandAction.element(driver, Total1Item).getTextValue();
         String expectedItem = "1 item";
         Assert.assertEquals(expectedItem, actualItem);
         LOGGER.debug("User Is In The Cart With " + actualItem);
@@ -71,4 +111,23 @@ public class ShoppingCart {
 
     }
 
+    public ShoppingCart cartValidationWithMultipleProduct(String totalQuantity, String totalAmount) {
+        CommandAction.wait(driver, By.xpath("//h1[contains(text(),'Cart: $350.00 (3 items)')]")).waitForElementToBeVisible();
+        String actualQuantity = driver.findElement(By.xpath("//h1[contains(text(),'Cart: $350.00 (3 items)')]")).getText();
+        String actualAmount = driver.findElement(By.xpath("//h1[contains(text(),'Cart: $350.00 (3 items)')]")).getText();
+        if (!actualQuantity.contains(totalQuantity)) {
+            Assert.fail("Item Quantity Didn't Match");
+        } else {
+            System.out.println("Total quantity is " + totalQuantity + " And It's Matched!");
+        }
+        if (!actualAmount.contains(totalAmount)) {
+            Assert.fail("Total Amount Didn't Match");
+        } else {
+            System.out.println("Total Amount Is " + totalAmount + " And It's Matched!");
+        }
+        LOGGER.debug("User Is In The Cart With Total quantity " + totalQuantity + " And Total Amount " + totalAmount);
+        return this;
+    }
+
 }
+

@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class NavigationBar {
+    private final By GoBackToHomePage = By.id("home");
     private final By Categories = By.xpath("//span[contains(text(),'Categories')]");
     private final By Deals = By.cssSelector("#secondary");
     private final By WhatNew = By.cssSelector("#trending");
@@ -23,6 +24,12 @@ public class NavigationBar {
 
     public NavigationBar (WebDriver driver) {
         this.driver = driver;
+    }
+
+    public NavigationBar goBackToHomePage (){
+        LOGGER.debug("User Went Back To Home Page");
+        CommandAction.element(driver,GoBackToHomePage).click();
+        return this;
     }
 
     public NavigationBar clickOnCategories(){

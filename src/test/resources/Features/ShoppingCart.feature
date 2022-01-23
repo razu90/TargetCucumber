@@ -4,7 +4,7 @@ Feature: Check Shopping Cart Functionality With Multiple Products
     Given the user is on Home Page
     Then the user should see the title
 
-  @ShoppingCartFunction
+  @SingleItemValidation
   Scenario Outline: User Will Add A Gift Card To The Cart
     When User Search For Gift card
     And Chose The Gift Card Design
@@ -18,4 +18,12 @@ Feature: Check Shopping Cart Functionality With Multiple Products
       | 'MOBILE'] | '$100'] |
       | 'E-MAIL'] | '$200'] |
       | 'MOBILE'] | '$500'] |
+
+
+  @MultipleItemValidation
+  Scenario: User Will Add Multiple Gift Card To The Cart
+    When User Chose Gift card
+    And select the value with delivery method
+    And Add It To The Cart
+    Then User Should See To Total Product "3" With "$350" Total Value
 
